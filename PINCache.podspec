@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.authors       = { 'Garrett Moon' => 'garrett@pinterest.com', 'Justin Ouellette' => 'jstn@tumblr.com' }
   s.source        = { :git => 'https://github.com/pinterest/PINCache.git', :tag => "#{s.version}" }
   s.license       = { :type => 'Apache 2.0', :file => 'LICENSE.txt' }
+  s.resource_bundles = { "#{s.name}_Privacy" => ['PrivacyInfo.xcprivacy'] }
   s.requires_arc  = true
   s.frameworks    = 'Foundation'
   s.ios.weak_frameworks   = 'UIKit'
